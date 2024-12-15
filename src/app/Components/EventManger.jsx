@@ -13,11 +13,14 @@ const EventManger = ({ selectedDate }) => {
   const [isEditing, setIsEditing] = useState(false); // To track if we are editing an event
   const [currentEditEventId, setCurrentEditEventId] = useState(null); // To store the id of the event being edited
   const [searchKeyword, setSearchKeyword] = useState(""); // To filter events by title or description
-  const [events, setEvents] = useState(() => {
-    // Load events from local storage if they exist
-    const savedEvents = localStorage.getItem("events");
-    return savedEvents ? JSON.parse(savedEvents) : {}; // Parse or return an empty object
-  });
+ const [events, setEvents] = useState({});
+
+ useEffect(() => {
+   const savedEvents = localStorage.getItem("events");
+   if (savedEvents) {
+     setEvents(JSON.parse(savedEvents));
+   }
+ }, []);
 
   const [newEvent, setNewEvent] = useState({
     title: "",
