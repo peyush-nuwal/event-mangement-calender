@@ -35,7 +35,7 @@ This is a simple Event Management application built using Next.js, Tailwind CSS,
 
 You can view a live version of the Event Management Application by clicking the link below:
 
-[Live Demo](https://your-deployed-app-link.com)
+[Live Demo](https://event-mangement-calender-fff.vercel.app/)
 
 
 ## Installation
