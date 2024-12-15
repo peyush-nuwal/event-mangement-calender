@@ -44,7 +44,7 @@ You can view a live version of the Event Management Application by clicking the 
 First, clone the repository to your local machine.
 
 ```bash
-git clone https://github.com/yourusername/event-manager.git
+https://github.com/peyush-nuwal/event-mangement-calender.git
 ```
 
 
